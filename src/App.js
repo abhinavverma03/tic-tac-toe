@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Square from './Square';
-import "./App.css"
+import "./App.css";
+import Confetti from 'react-confetti';
 
 
 export default function Board() {
@@ -27,6 +28,7 @@ export default function Board() {
   
   if (winner) {
     status = 'Winner: ' + winner;
+    
   }
   else if(!squares.includes(null)){
     status = "Draw";
@@ -40,6 +42,7 @@ export default function Board() {
 
   return (
     <>
+      {winner && <Confetti initialVelocityX={10} initialVelocityY={10} />}
       <h1>Tic Tac Toe</h1>
       <div className='board'>
         <div className="board-row">
