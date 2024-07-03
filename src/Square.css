@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .square{
-    background-color: white;
-    width: 50px;
-    height: 50px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #FFE9D0;
+    width: 70px;
+    height: 70px;
     font-size: xx-large;
     font-weight: bolder;
     border: solid black 3px;
   }
-button:hover{
-    background-color: white;
+.square:hover{
+  background-color: #FFE9D0;
 }

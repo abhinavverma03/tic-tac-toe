@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Press+Start+2P&display=swap');
+
+body{
+  background-color: #FFE9D0;
+}
+
 .game-info{
   margin-left: -40px;
   display: flex;
   justify-content: center;
 }
 .board{
-  margin-top: 10vh;
-  margin-bottom: 7vh;
+  margin-top: 11vh;
+  margin-bottom: 8vh;
 }
 .board-row{
   display: flex;
@@ -13,12 +19,34 @@
   margin: -1px;
 }
 .status{
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
+  margin-bottom: 55px;
 }
 h1{
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 60px;
   text-align: center;
   font-size: 50px;
   font-weight: bolder;
+}
+.retry{
+  display: flex;
+
+  justify-content: center;
+  align-content: center;;
+}
+.retry>button{
+  background-color: #FFE9D0;
+  font-family: "Hanalei Fill";
+  font-size: x-large;
+  border-radius: 5px;
+  border-width: 2px;
+  width: 100px;
+  height: 40px;
+}
+.retry>button:hover{
+  background-color: #e6c5a1;
 }

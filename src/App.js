@@ -59,10 +59,17 @@ export default function Board() {
         </div>
       </div>
       <div className="status">{status}</div>
+      <div className='retry'>
+        <button onClick={refresh}>Retry</button>
+      </div>
+      
     </>
   );
 }
 
+function refresh(){
+  window.location.reload();
+}
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
